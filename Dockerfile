@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/windows/servercore as win10sdk
+FROM mcr.microsoft.com/windows/servercore:ltsc2016 as win10sdk
 
 SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]
 ADD http://download.microsoft.com/download/6/3/B/63BADCE0-F2E6-44BD-B2F9-60F5F073038E/standalonesdk/SDKSETUP.EXE C:/sdksetup.exe
